@@ -102,3 +102,56 @@ body
     margin: 5px 0;
     border-left: 3px solid #9d00ff;
 }
+
+.game-card {
+    background: rgba(0,0,0,0.6);
+    transition: all 0.3 ease;
+    position: relative;
+    overflow: hidden;
+}
+.game-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #9d00ff;
+}
+
+.game-thubnail {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.game-thubnail::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 20px #9d00ff;
+}
+
+.btn-neon {
+    background: transparent;
+    border: 2px solid #9d00ff;
+    color: #9d00ff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    background: #9d00ff;
+    color: #000;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.game-features {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.game-features li {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(157, 0, 255, 0.3);
+}

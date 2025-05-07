@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+body
+{
+    line-height: 1.6;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    url(wallpaperflare.com_wallpaper\(2\).jpg) center/cover fixed;
+    position: relative;
+    margin-top: 50px;
+
+
+}
+.hero h1 {
+    animation: neonPulse 2s infinite alternate;
+}
+
+@keyframes neonPulse {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #9d00ff, 0 0 4px #9d00ff;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #9d00ff, 0 0 30px #9d00ff;
+    }
+    
+}
+.navbar{
+    transition: all 0.3s ease;
+}
+
+
+.navbar{
+    letter-spacing: 1px;
+}
+
+
+.span, .nav-link:hover{
+    color: #9d00ff; 
+    text-shadow:0 0 10px #9d00ff, 0 0 20px #9d00ff, 0 0 3px #9d00ff;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    /* text-shadow:0 0 10px #9d00ff, 0 0 20px #9d00ff, 0 0 3px #9d00ff ; */
+}
+
+.navbar-brand::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #9d00ff;
+    transition: width 0.3s ease;
+}
+
+.navbar-brand:hover::after{
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+.neon-title {
+    color: #fff;
+    text-shadow: 0 0 10px #9d00ff;
+    position: relative;
+    text-align: center;
+}
+
+.neon-border {
+    border: 2px solid #9d00ff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #9d00ff;
+    position: relative;
+    background: rgba(0,0,0,0.6);
+}
+
+.neon-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.neon-list li {
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 3px solid #9d00ff;
+}

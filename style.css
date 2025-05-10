@@ -109,9 +109,6 @@ body
 }
 
 .game-block {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
     background: rgba(0,0,0,0.6);
     border-radius: 15px;
     transition: transform 0.3s ease;

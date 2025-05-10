@@ -90,7 +90,12 @@ body
     box-shadow: 0 0 15px #9d00ff;
     position: relative;
     background: rgba(0,0,0,0.6);
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+    /* Новые свойства для ширины: */
+    margin: 0 auto; /* Центрирование */
 }
+
 
 .neon-list {
     list-style: none;
@@ -104,6 +109,9 @@ body
 }
 
 .game-block {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
     background: rgba(0,0,0,0.6);
     border-radius: 15px;
     transition: transform 0.3s ease;
